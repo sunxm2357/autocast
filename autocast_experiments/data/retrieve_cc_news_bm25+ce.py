@@ -137,7 +137,7 @@ def main():
     from datasets.utils.logging import set_verbosity_error
     set_verbosity_error()
 
-    cc_news_dataset = Dataset.load_from_disk('/Volumes/mac_dock/cc_news')
+    cc_news_dataset = Dataset.load_from_disk('/scratch/datasets/cc-news/cc_news')
     cc_news_df = cc_news_dataset.to_pandas() # load all data in memory
     cc_news_df["id"] = cc_news_df.index
 
